@@ -1,0 +1,57 @@
+  .game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 90px;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-image: url('../assets/acerte-numero-wallpaper.jpg');
+    background-size: auto;
+    background-position: center;
+  }
+  .container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro transparente */
+    padding: 90px;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 10px;
+  }
+  .inputNumber {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  .inputNumber:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 5px #2ecc71;
+  }
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  button:active {
+    background-color: #1c6391;
+  }

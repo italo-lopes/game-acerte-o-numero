@@ -1,0 +1,33 @@
+nav{
+    color: azure;
+    font-size: medium;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 22px;
+    padding: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+
+  }
+  a{
+    padding-right: 12px;
+    font-weight: bold; 
+    color:#fff5f5; 
+    font-size: larger;
+  }
+  .avatar{
+    border-radius: 80%;
+  }
+  header{
+    text-align: center;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: brown;
+    background-size: auto;
+    background-position: center;
+  }

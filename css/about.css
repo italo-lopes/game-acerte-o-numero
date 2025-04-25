@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    height: 100vh; /* altura total da tela */
+  }
+
+  .esquerda, .direita {
+    flex: 2; /* ocupa 50% cada */
+  }
+
+  .esquerda {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .direita {
+    background-color: rgba(255, 255, 255, 0);
+  }
