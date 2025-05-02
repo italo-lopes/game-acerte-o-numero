@@ -5,6 +5,12 @@ const buttonGameIniciar = document.getElementById("go-game");
 const warning = document.getElementById("warning");
 const numberWinText = document.getElementById("number");
 const numeroSecret = document.getElementById("numero-secret")
+const inputSelect = document.getElementById("quantity");
+
+//hud
+const hudWin = document.getElementById("hud-win");
+const hudAttempt = document.getElementById("hud-attempt");
+const hudGame = document.getElementById("hud-game");
 
 console.log(warning);
 let min = 0;
@@ -15,17 +21,19 @@ let numberSelect = null;
 let win = false;
 let countGame=0;
 let countWin=0;
-let countTentativa;
+let countTentativa=0;
+
 buttonGameIniciar.addEventListener("click",()=>{
     iniciarGame()
     let checkStatus = inicioGame?false: true;
     if(checkStatus == true){
         countGame++;
-        text.innerHTML = "Selecione o Número entre 0 e 100";
-        buttonGameIniciar.innerHTML ="Parar Game";
+        text.textContent = "Selecione o Número entre 0 e 100";
+        buttonGameIniciar.textContent ="Parar Game";
         buttonGameIniciar.style.background = "red";
         inicioGame = true;
         valorRandom = gerarRandom();
+        hudGame.textContent ="Game: "+ countGame;
     }else{
         gameOver();
     }
@@ -33,29 +41,33 @@ buttonGameIniciar.addEventListener("click",()=>{
 });
 
 recebeValor.addEventListener("click", ()=>{
-    numberSelect = parseInt(document.getElementById("quantity").value);
-
-    if(inicioGame == true && (numberSelect >= 0 || numberSelect <= 100 ) ){
+    let valorString = document.getElementById("quantity").value;
+    numberSelect = parseInt(valorString);
+    console.log(numberSelect);
+    warning.textContent = "";
+    countTentativa++;   
+    hudAttempt.textContent = "Tentativa: "+ countTentativa;
+    if(inicioGame == true && (numberSelect > min && numberSelect < max ) ){
         console.log(numberSelect);
         if(numberSelect == valorRandom){
             win = true;
             countWin++;
+            hudWin.textContent = "Win : "+ countWin;
             gameOver();
         }else{
             if(numberSelect > valorRandom){
                 max = numberSelect;
-                text.innerHTML = "O valor esta entre "+min+" e "+max;
             }else{
                 min = numberSelect;
-                text.innerHTML = "O valor esta entre "+min+" e "+max;
             }
+            text.textContent = "O valor esta entre "+min+" e "+max;
         }
         console.log("O button foi clicado",  numberSelect);
     }else{
         if(inicioGame != true){
-            warning.innerHTML = "O jogo precisa ser iniciado";
+            warning.textContent = "O jogo precisa ser iniciado";
         }else{
-            warning.innerHTML = "Selecione um número valido";
+            warning.textContent = "Selecione um número valido";
         }
         
     }
@@ -63,32 +75,36 @@ recebeValor.addEventListener("click", ()=>{
 
 function gameOver(){
     if(win == true){
-        text.innerHTML = "Acerte o número Secrteto";
-        numberWinText.innerHTML = "Win/ Numero: "+valorRandom;
+        text.textContent = "Acerte o número Secrteto";
+        numberWinText.innerText = "Win \n Numero: "+valorRandom;
         numeroSecret.style.display = "none";
     }else{
-        text.innerHTML = "Acerte o número Secrteto";
+        text.textContent = "Acerte o número Secrteto";
     }
-    buttonGameIniciar.innerHTML = "Íniciar do Game";
+    buttonGameIniciar.textContent = "Íniciar do Game";
     buttonGameIniciar.style.background = "#3498db";
+
     inicioGame = false;
 }
 
 function iniciarGame(){
-    numberWinText.innerHTML = "";
-    warning.innerHTML = "";
+    numberWinText.textContent = "";
+    warning.textContent = "";
     numeroSecret.style.display = "block";
     win = false;
+    inputSelect.value = "";
+    min = 0;
+    max = 100;
+    countTentativa=0;
+    hudAttempt.textContent = "Tentativa: "+ countTentativa;
 }
 
-
 function gerarRandom(){
-    let random = parseInt(Math.random() * 100);
+    let random = parseInt(Math.random() * 99)+1;
     console.log(random);
     return random
 }
 
-
 function verificarRage(random){
-    text.innerHTML = "O valor esta entre "+number+" menor que";
+    text.textContent = "O valor esta entre "+number+" menor que";
 }
