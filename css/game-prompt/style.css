@@ -7,3 +7,50 @@ body{
     background-size: auto;
     background-position: center;
   }
+  .titulo{
+    text-align: center;
+  }
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  button:active {
+    background-color: #1c6391;
+  }
+  .painel{
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro transparente */
+    padding: 90px;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 10px;
+  }
+  .game-prompt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1c62918f;
+    padding: 33px 0px;
+    margin: 0px 33px ;
+    border-radius: 22px;
+    border: solid;;
+    border-color: black;
+  }
+  .descricao{
+    color: aliceblue;
+  }
+  .info{
+    margin-top: 10px;
+  }
