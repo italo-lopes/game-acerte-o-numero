@@ -9,12 +9,18 @@ body {
     background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-
-body::before {
+.nav{
+     background-color: #01080E;
+     border: solid;
+     border-color: #1692ff;
+     padding: 12px;
+}
+.container::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
     background-position: right;
