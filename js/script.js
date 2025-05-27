@@ -12,7 +12,7 @@ const hudWin = document.getElementById("hud-win");
 const hudAttempt = document.getElementById("hud-attempt");
 const hudGame = document.getElementById("hud-game");
 
-console.log(warning);
+console.log(buttonGameIniciar);
 let min = 0;
 let max = 100;
 let inicioGame = false;
@@ -23,8 +23,8 @@ let countGame=0;
 let countWin=0;
 let countTentativa=0;
 
-buttonGameIniciar.addEventListener("click",()=>{
-    iniciarGame()
+buttonGameIniciar.addEventListener("click", ()=>{
+    iniciarGame();
     let checkStatus = inicioGame?false: true;
     if(checkStatus == true){
         countGame++;
@@ -108,3 +108,4 @@ function gerarRandom(){
 function verificarRage(random){
     text.textContent = "O valor esta entre "+number+" menor que";
 }
+
