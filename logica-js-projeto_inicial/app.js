@@ -1,12 +1,23 @@
-//alert("Hello, World");
+// alert("Hello, World");
 // prompt("input") recebe valor na caixa de dialogo
 // let varieavel em js (usado pragurdar variavel)
 let numeroSecreto = null;
 let chute = null;
 const buttonComandao1 = document.getElementById("comando-1");
-alert("Hello, World");
+const buttonComandao2 = document.getElementById("comando-2");
+//const textWin = document.getElementsByClassName("container__informacoes");
+
 buttonComandao1.addEventListener("click", ()=>{
-     numeroSecreto = parseInt((Math.random() * 9)+1) ;
+    acertaOnumeroRandom();
+});
+
+buttonComandao2.addEventListener("click", ()=>{
+    acertaOnumeroRandomComNTentativa();
+});
+
+// primeira lógica do curso da alura
+function acertaOnumeroRandom(){
+     numeroSecreto = parseInt((Math.random() * 9)+1);
      console.log(numeroSecreto);
      chute = prompt("Digite um numero de 1 a 10");
     if(chute == numeroSecreto){
@@ -16,4 +27,25 @@ buttonComandao1.addEventListener("click", ()=>{
         alert("Error - Tente Novamente \n \n O número secretos era: "+ numeroSecreto);
         console.log("Não acertou o número secreto era: "+numeroSecreto);
     }
-})
+}
+
+function acertaOnumeroRandomComNTentativa(){
+    chute = -1;
+    numeroSecreto = parseInt((Math.random() * 9)+1) ;
+    console.log(numeroSecreto);
+    let min = 1;
+    let max = 10;
+    while(chute != numeroSecreto){
+        chute = prompt(`Digite um numero de ${min} a ${max}`);
+         if(chute == numeroSecreto){
+            break;
+        }else{
+            if(chute > numeroSecreto){
+                 max = chute;
+            }else{
+                min = chute; 
+            }
+        }
+    }
+    alert(`O numero secreto é ${numeroSecreto} \n win`);
+}

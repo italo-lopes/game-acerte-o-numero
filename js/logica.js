@@ -72,3 +72,48 @@ export function atv1Desafio10(){
 }
 
 // export não ter DOM por que carrega a pagina 
+
+//parte 2
+export function atv2Desafio1(){
+    let dayWeek = prompt("Qual o dia da Semana?");
+    let recebe = dayWeek.toUpperCase() ; 
+    if(recebe == "SÁBADO" || recebe == "DOMINGO"){
+        alert("Bom fim de semana!")
+    }else{
+         alert("Boa semana!")
+    }
+    console.log(recebe);
+}
+
+export function atv2Desafio2(){
+    let number = prompt("Digite o número.");
+    if(number > 0){
+        alert("Número positivo");
+    }else{
+        if(number == 0 ){
+            alert("Número é zero neutro")
+            return
+        }
+        alert("Número é negativo");
+    }
+}
+
+export function atv2Desafio3(){
+    let score = parseInt((Math.random() * 10) + 95);
+    alert("Sua pontuação é : " +score );
+    if(score >= 100){
+        alert("Parabéns");
+        return
+    }
+    alert("Tente novamente para ganhar"); 
+}
+
+let saldo = 100;
+export function atv2Desafio4(){
+    alert(`Seu saldo :  R$ ${saldo} Reais`);
+}
+
+export function atv2Desafio5(){
+    const name = prompt("Qual o seu nome?");
+    alert(`boas-vindas ${name}`);
+}
