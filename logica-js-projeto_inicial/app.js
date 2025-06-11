@@ -35,7 +35,9 @@ function acertaOnumeroRandomComNTentativa(){
     console.log(numeroSecreto);
     let min = 1;
     let max = 10;
+    let tentativa=0;
     while(chute != numeroSecreto){
+        tentativa++;
         chute = prompt(`Digite um numero de ${min} a ${max}`);
          if(chute == numeroSecreto){
             break;
@@ -47,5 +49,7 @@ function acertaOnumeroRandomComNTentativa(){
             }
         }
     }
-    alert(`O numero secreto é ${numeroSecreto} \n win`);
+    alert(`O numero secreto é ${numeroSecreto} 
+            \n win 
+            \n Tentativas : ${tentativa}`);
 }
