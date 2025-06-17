@@ -117,3 +117,39 @@ export function atv2Desafio5(){
     const name = prompt("Qual o seu nome?");
     alert(`boas-vindas ${name}`);
 }
+
+// deafio 3
+export function atv3Desafio1(){
+    let cont = 0;
+    while(cont < 10){
+        cont++;
+        alert(`Número ${cont}`);
+    }
+}
+
+export function atv3Desafio2(){
+    let cont = 11;
+    while(cont > 0){
+        cont--;
+        alert(`Número ${cont}`);
+    }
+}
+
+export function atv3Desafio3(){
+    let number = prompt("Qual número que usar pra contar de modo regressivo");
+    console.log("===============================");
+    while(number >= 0){
+        console.log("-> "+number);
+        number--;
+    }
+}
+
+export function atv3Desafio4(){
+    let number = prompt("Qual número que usar pra contar de modo progressivo");
+    let count=0;
+    console.log("===============================");
+    while(count <= number){
+        console.log("-> "+count);
+        count++;
+    }
+}
