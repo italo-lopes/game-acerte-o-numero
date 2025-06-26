@@ -31,19 +31,17 @@ function acertaOnumeroRandom(){
 
 function acertaOnumeroRandomComNTentativa(){
     chute = -1;
-    numeroSecreto = parseInt((Math.random() * 9)+1) ;
-    console.log(numeroSecreto);
-    let min = 0;
+    let min = 1;
     let max = 10;
+    numeroSecreto = parseInt((Math.random() * max)+1) ;
+    console.log(numeroSecreto);
     let tentativa=0;
     //loop
     while(chute != numeroSecreto){
         chute = prompt(`Digite um numero de ${min} a ${max}`);
         tentativa++;
          if(chute == numeroSecreto){
-            alert(`O numero secreto é ${numeroSecreto} 
-            \n win 
-            \n Tentativas : ${tentativa}`);
+            break;
         }else{
             if(chute > numeroSecreto){
                 alert(`O numero secreto é menor : ${chute}`)
@@ -54,4 +52,10 @@ function acertaOnumeroRandomComNTentativa(){
             }
         }
     }
+    //ver as coisas que foi alterado.
+    let tentativaString = (tentativa == 1) ? "Tentativa": "Tentativas";
+    alert(`O numero secreto é ${numeroSecreto} 
+    \n win 
+    \n ${tentativaString} : ${tentativa}`);
+
 }

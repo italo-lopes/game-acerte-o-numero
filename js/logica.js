@@ -153,3 +153,87 @@ export function atv3Desafio4(){
         count++;
     }
 }
+
+// 4 defasio
+export function atv4Desafio1(){
+    console.log("Boas vidas");
+}
+
+export function atv4Desafio2(){
+    const nome = "Italo de Assis Silva Lopes";
+    console.log(`Olá, ${nome}!`);
+}
+
+export function atv4Desafio3(){
+    const nome = "Italo de Assis Silva Lopes";
+    alert(`Olá, ${nome}!`);
+}
+
+export function atv4Desafio4(){
+    const res = prompt(" Qual a linguagem de programação que você mais gosta?.");
+    alert(`A linguagem de programação que você mais gosta é ${res}`);
+}
+
+export function atv4Desafio5(){
+    const valor1 = 10;
+    const valor2 = 5;
+    const resultado = valor1 + valor2;
+    console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultado}.`);
+}
+
+export function atv4Desafio6(){
+    const valor1 = 10;
+    const valor2 = 5;
+    const resultado = valor1 - valor2;
+    console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultado}.`);
+}
+
+export function atv4Desafio7(){
+    const age = prompt("Qual a sua idade?");
+    const menssage = (age >= 18)? "Voce é maior de idade" : "Menor de iadade";
+    console.log(menssage);
+}
+
+export function atv4Desafio8(){
+    const numero = prompt("Digite um numero?");
+    let menssage = "";
+    if(numero > 0){
+        menssage ="Positivo";
+    }else{
+        if(numero == 0){
+            menssage = "Zero";
+        }else if(numero < 0){
+            menssage = "Negativo";
+        }
+    }
+    console.log(menssage);
+}
+
+export function atv4Desafio9(){
+    let count = 0;
+    while(count < 10){
+        count ++;
+        console.log("-> "+count);
+    }
+}
+
+export function atv4Desafio10(){
+    const nota = 8;
+    const aluno = nota >= 7? "Aprovado" : "Reprovado";
+    console.log(aluno);
+}
+
+export function atv4Desafio11(){
+    const random = Math.random();
+    console.log(random);
+}
+
+export function atv4Desafio12(){
+    const number = parseInt(Math.random()* 10 + 1);
+    console.log("Número aleatorio: "+number);
+}
+
+export function atv4Desafio13(){
+    const number =parseInt(Math.random()* 1000 +1);
+    console.log("Número aleatorio: "+number);
+}
