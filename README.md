@@ -4,7 +4,7 @@ Programa iniciante baseada no aula (Lógica de programação: mergulhe em progra
 
 
 <h1>Referências</h1>
-**[Lógica de programação com Portugol](https://www.casadocodigo.com.br/products/livro-portugol?_pos=2&_sid=4661f8240&_ss=r)**
+**[Lógica de programação com Portugol]( https://www.casadocodigo.com.br/products/livro-portugol?_pos=2&_sid=4661f8240&_ss=r )**
 <ul>
   <li>[Lógica de Programação Crie seus primeiros programas usando Javascript e HTML](https://www.casadocodigo.com.br/products/livro-programacao?_pos=1&_sid=4661f8240&_ss=r)</li>
   <li>**[Lógica de programação com Portugol](https://www.casadocodigo.com.br/products/livro-portugol?_pos=2&_sid=4661f8240&_ss=r)**</li>
