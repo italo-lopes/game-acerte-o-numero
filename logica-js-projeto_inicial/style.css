@@ -15,12 +15,7 @@ body {
       
 }
 
-.nav{
-     background-color: #01080E;
-     border: solid;
-     border-color: #1692ff;
-     padding: 12px;
-}
+
 .container::before {
     background-image: url("img/code.png");
     background-repeat: no-repeat;
@@ -116,7 +111,11 @@ span{
      justify-content: center;
     text-align: center;
 }
-.next{
+
+.nav{
+    margin-top: 20px;
+}
+.next, .nav a{
     background-color: yellow;
     margin: 20px;
     padding: 10px 20px;
