@@ -19,4 +19,7 @@ Programa iniciante baseada no aula (Lógica de programação: mergulhe em progra
   <li>[Estruturas de dados e algoritmos com JavaScript
     Escreva um código JavaScript complexo e eficaz usando a mais recente ECMAScript
     Por Loiane Groner · 2019](https://www.google.com.br/books/edition/Estruturas_de_dados_e_algoritmos_com_Jav/0nWKDwAAQBAJ?hl=pt-BR&gbpv=1&dq=estrutura+de+dados+javascript&printsec=frontcover)</li>
+    <li>
+    [HTML, CSS e Javascript, quais as diferenças? (Rafaella Ballerini
+    24/02/2021)](https://www.alura.com.br/artigos/html-css-e-js-definicoes)</li>
 </ul>
