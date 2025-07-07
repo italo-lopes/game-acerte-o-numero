@@ -1,16 +1,31 @@
-const titulo = document.querySelector('h1');
-const subTitulo = document.querySelector('p');
+const chuteButton = document.getElementById("chute");
+const reiniciarButton = document.getElementById("reiniciar");
+let tentativa = 0;
+function showText(tag,texto){
+    const elemento = document.querySelector(tag);
+    elemento.innerHTML = texto;
+}
 
-titulo.innerHTML = "Jogo do Número Secreto";
-subTitulo.innerHTML = "Escolha o número de 1 a 10";
+function randomNumber(){
+    return parseInt((Math.random() * 10) + 1); 
+}
 
-const chute = document.getElementById("chute");
-const reiniciar = document.getElementById("reiniciar");
+showText("h1","Jogo do Número Secreto");
+showText("p","Escolha o número de 1 a 10");
 
-chute.addEventListener("click",()=>{
-    console.log("Foi clickado");
+const valor = randomNumber();
+console.log("Valor random : "+valor);
+
+chuteButton.addEventListener("click",()=>{
+    const value = document.querySelector('input').value;
+    tentativa++;
+      console.log(tentativa);
+    console.log(valor == value);
+    if(valor == value){
+        tentativa=0;
+    }
 });
 
-reiniciar.addEventListener("click", ()=>{
+reiniciarButton.addEventListener("click", ()=>{
     console.log("Reiniciado");
 });

@@ -1,0 +1,98 @@
+.painel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.painel2{
+  color: white;
+  margin-top: 12px;
+  padding: 22px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-image: url('../../assets/wallPaper.png');
+    background-size: auto;
+    background-position: center;
+}
+.imc-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 12px;
+}
+
+.imc-container h3 {
+    margin-bottom: 20px;
+    color: #1875E8;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.campo label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.campo input {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.campo input:focus {
+    border: 1px solid #1875E8;
+}
+
+button {
+    background-color: #1875E8;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #125bb5;
+}
+
+.botoes-adicionais {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo{
+    text-align: center;
+    color: #ccc;
+}
