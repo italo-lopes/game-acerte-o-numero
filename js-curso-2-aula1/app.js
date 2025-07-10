@@ -9,7 +9,7 @@ reiniciar();
 function showText(tag,texto){
     const elemento = document.querySelector(tag);
     elemento.innerHTML = texto;
-    //voiceText(texto);
+    voiceText(texto);
     //responsiveVoice.speak(texto, "Brazilian Portuguese Female", {rate: 1.3});
 }
 function randomNumber(){
