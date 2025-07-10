@@ -23,3 +23,30 @@ Programa iniciante baseada no aula (Lógica de programação: mergulhe em progra
     [HTML, CSS e Javascript, quais as diferenças? (Rafaella Ballerini
     24/02/2021)](https://www.alura.com.br/artigos/html-css-e-js-definicoes)</li>
 </ul>
+
+###  Api
+
+# Voice 1
+Cria o voice por texto ()
+https://responsivevoice.org/
+usado para transformar texto em voice
+Document
+https://responsivevoice.org/api/
+Brazilian Portuguese Female
+ResponsiveVoice Text To Speech API
+
+
+# Voice 2
+'speechSynthesis'
+codigo de voice nativo
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API
+https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis
+Web Speech API
+    if ('speechSynthesis' in window) {
+        let utterance = new SpeechSynthesisUtterance(texto);
+        utterance.lang = 'pt-BR'; 
+        utterance.rate = 1.2; 
+        window.speechSynthesis.speak(utterance); 
+    } else {
+        console.log("Web Speech API não suportada neste navegador.");
+    }
