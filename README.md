@@ -31,8 +31,8 @@ ResponsiveVoice Text To Speech API
 # Voice 2
 'speechSynthesis'
 codigo de voice nativo
-https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API
-https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis
+- https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API
+- https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis
 
     ```
     Web Speech API
