@@ -33,12 +33,15 @@ ResponsiveVoice Text To Speech API
 codigo de voice nativo
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API
 https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis
-Web Speech API
-    if ('speechSynthesis' in window) {
-        let utterance = new SpeechSynthesisUtterance(texto);
-        utterance.lang = 'pt-BR'; 
-        utterance.rate = 1.2; 
-        window.speechSynthesis.speak(utterance); 
-    } else {
-        console.log("Web Speech API não suportada neste navegador.");
-    }
+
+    ```
+    Web Speech API
+        if ('speechSynthesis' in window) {
+            let utterance = new SpeechSynthesisUtterance(texto);
+            utterance.lang = 'pt-BR'; 
+            utterance.rate = 1.2; 
+            window.speechSynthesis.speak(utterance); 
+        } else {
+            console.log("Web Speech API não suportada neste navegador.");
+        }
+    ```
